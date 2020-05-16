@@ -10,5 +10,9 @@ html(lang="en")
         .page.home-page
             include pug/layout/sidebar
 
-            .content-area content
+            .content-area 
+                include pug/layout/header
+                .content
+                    h1 #{pageTitle}
         include pug/layout/scripts.pug
+
