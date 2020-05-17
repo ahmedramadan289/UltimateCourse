@@ -49,8 +49,13 @@
                     padding-left: 30px;
                 }
             }
+            .toggle-submenu {
+                float: right;
+                padding-top: 5px;
+            }
             .child-links {
                 position: relative;
+                display: none;
                 &:before {
                     content: '';
                     position: absolute;

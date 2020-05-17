@@ -8,4 +8,8 @@ $(function() {
     $(".toggle-sidebar").on("click", () => {
         $('.content-area , .sidebar').toggleClass('no-sidebar')
     });
+    $('.toggle-submenu').on("click", function() {
+        $(this).toggleClass('fa-angle-right fa-angle-down ');
+        $(this).parent('a').next('.child-links').slideToggle()
+    });
 });

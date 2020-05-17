@@ -6082,8 +6082,14 @@
   padding-left: 30px;
 }
 
+.page .sidebar .links-area .toggle-submenu {
+  float: right;
+  padding-top: 5px;
+}
+
 .page .sidebar .links-area .child-links {
   position: relative;
+  display: none;
 }
 
 .page .sidebar .links-area .child-links:before {
