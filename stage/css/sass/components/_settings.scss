@@ -26,4 +26,24 @@
             h4 {}
         }
     }
+    .color-option {
+        ul {
+            $colors: #00b894, #c0392b, #3498db, #2c3e50;
+            @for $i from 1 through length($colors) {
+                li:nth-child(#{$i}) {
+                    background-color: nth($colors, $i);
+                }
+            }
+            li {
+                width: 24px;
+                height: 24px;
+                opacity: .7;
+                cursor: pointer;
+                display: inline-block;
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }

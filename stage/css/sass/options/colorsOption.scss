@@ -1,9 +1,12 @@
-$themes:( green-theme:(color:$flatGreen), red-theme:(color:$flatRed), blue-theme:(color:$flatBlueAl));
+$themes:( green-theme:(color:#00b894), red-theme:(color:#c0392b), blue-theme:(color:#3498db), grey-theme:(color:#2c3e50));
 @each $theme,
 $map in $themes {
     .#{$theme} {
-        .classname {
-            color: map-get($map: color);
+        .page .sidebar {
+            background-color: map-get($map, color);
+        }
+        .header .usermenu-contaienr .dropdown-menu .user-info h3 {
+            color: map-get($map, color);
         }
     }
 }
