@@ -6273,4 +6273,32 @@ body {
   cursor: pointer;
 }
 
+.settings-box {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 999;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.settings-box .toggle-settings {
+  position: absolute;
+  left: -48px;
+  top: 100px;
+  background-color: #fff;
+  padding: 15px;
+  font-size: 22px;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+}
+
+.settings-box.hide-settings {
+  right: -250px;
+}
+
 /*# sourceMappingURL=main.css.map */
