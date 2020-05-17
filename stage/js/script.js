@@ -1,8 +1,8 @@
 $(function() {
     'use strict';
-    $('.content-area').width($(window).width() - $('.sidebar').width() - 33);
+    $('.content-area').width($(window).width() - $('.sidebar').width() - 25);
     $(window).resize(function() {
-        $('.content-area').width($(window).width() - $('.sidebar').width() - 33);
+        $('.content-area').width($(window).width() - $('.sidebar').width() - 25);
 
     });
     $(".toggle-sidebar").on("click", () => {
