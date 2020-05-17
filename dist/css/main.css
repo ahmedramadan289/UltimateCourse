@@ -6212,4 +6212,65 @@ body {
   text-decoration: none;
 }
 
+.header .usermenu-contaienr {
+  float: right;
+}
+
+.header .usermenu-contaienr .username {
+  cursor: pointer;
+}
+
+.header .usermenu-contaienr .username .avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.header .usermenu-contaienr .username .user {
+  font-weight: bold;
+  color: #777;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.header .usermenu-contaienr .dropdown-menu {
+  min-width: 600px;
+  border: none;
+  padding: 20px;
+  -webkit-box-shadow: 10px 10px 10px #ddd;
+          box-shadow: 10px 10px 10px #ddd;
+  position: relative;
+  top: 10px !important;
+  border: 1px solid #ddd;
+}
+
+.header .usermenu-contaienr .dropdown-menu:before {
+  content: '';
+  position: absolute;
+  top: -29px;
+  right: 145px;
+  border-style: solid;
+  border-width: 15px;
+  border-color: transparent transparent #ddd transparent;
+}
+
+.header .usermenu-contaienr .dropdown-menu .user-info h3 {
+  font-weight: bold;
+  color: #3498db;
+}
+
+.header .usermenu-contaienr .dropdown-menu .user-info p {
+  color: #2c3e50;
+}
+
+.header .usermenu-contaienr .dropdown-menu .activites-list li {
+  padding: 10px;
+}
+
+.header .usermenu-contaienr .dropdown-menu .usermenu-links .link-box {
+  background-color: #f3f3f3;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=main.css.map */

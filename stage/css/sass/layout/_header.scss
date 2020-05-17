@@ -76,4 +76,60 @@
             }
         }
     }
+    .usermenu-contaienr {
+        float: right;
+        .username {
+            cursor: pointer;
+            .avatar {
+                width: 50px;
+                height: 50px;
+            }
+            .user {
+                font-weight: bold;
+                color: #777;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }
+        .dropdown-menu {
+            min-width: 600px;
+            border: none;
+            padding: 20px;
+            box-shadow: 10px 10px 10px #ddd;
+            position: relative;
+            top: 10px !important;
+            border: 1px solid #ddd;
+            &:before {
+                content: '';
+                position: absolute;
+                top: -29px;
+                right: 145px;
+                border-style: solid;
+                border-width: 15px;
+                border-color: transparent transparent #ddd transparent;
+            }
+            .user-info {
+                h3 {
+                    font-weight: bold;
+                    color: $flatBlueAlt;
+                }
+                p {
+                    color: $flatUi;
+                }
+            }
+            .activites-list {
+                li {
+                    padding: 10px;
+                }
+            }
+            .usermenu-links {
+                .link-box {
+                    background-color: #f3f3f3;
+                    padding: 10px;
+                    border-radius: 6px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }
