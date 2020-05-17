@@ -1,8 +1,13 @@
 .header {
     background-color: #fff;
     padding: 20px;
-    .toggle-sidebar {
+    .header-icon {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 50%;
+        color: #555;
         cursor: pointer;
+        margin-left: 10px;
     }
     .notifaction-contaienr {
         display: inline-block;
