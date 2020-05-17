@@ -6,6 +6,7 @@
     <title>HomePage</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&amp;display=swap"/>
   </head>
   <body>
     <div class="page home-page">
@@ -32,7 +33,23 @@
         </ul>
       </div>
       <div class="content-area"> 
-        <div class="header"> <i class="fas fa-exchange-alt fa-lg toggle-sidebar"></i></div>
+        <div class="header"> <i class="fas fa-exchange-alt fa-lg toggle-sidebar"></i>
+          <div class="dropdown notifaction-contaienr"><i class="fa fa-bell fa-lg toggle-notfiactions" id="notifactions" data-toggle="dropdown" aira-haspopup="true" aira-expanded="false"></i>
+            <div class="dropdown-menu" aira-labelledby="notifactions">
+              <div class="noti-head">Notifactions<span>50</span></div>
+              <div class="noti-contnet"> 
+                <ul class="list-unstyled">
+                  <li><i class="fa fa-envelope fa-lg"></i>You Git Emails From </li>
+                  <li><i class="fa fa-money-bill fa-lg"></i>You Git Money From </li>
+                  <li><i class="fa fa-thumbs-up fa-lg"></i> You Git Liks From </li>
+                  <li><i class="fa fa-envelope fa-lg"></i> You Git Emails From </li>
+                  <li><i class="fa fa-money-bill fa-lg"></i> You Git Money From </li>
+                </ul>
+              </div>
+              <div class="noti-footer text-center"><a href="#">View All Notifactions</a></div>
+            </div>
+          </div>
+        </div>
         <div class="container-fluid">
           <div class="content">
             <div class="page-head">

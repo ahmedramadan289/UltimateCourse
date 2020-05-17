@@ -1,2 +1,26 @@
 .header 
      i.fas.fa-exchange-alt.fa-lg.toggle-sidebar
+     .dropdown.notifaction-contaienr
+          i.fa.fa-bell.fa-lg.toggle-notfiactions(id="notifactions" data-toggle="dropdown" aira-haspopup="true" aira-expanded="false")
+          .dropdown-menu(aira-labelledby="notifactions")
+               .noti-head
+                    | Notifactions
+                    span 50
+               .noti-contnet 
+                    ul.list-unstyled
+                         li
+                              i.fa.fa-envelope.fa-lg
+                              | You Git Emails From 
+                         li
+                              i.fa.fa-money-bill.fa-lg
+                              | You Git Money From 
+                         li
+                              i.fa.fa-thumbs-up.fa-lg
+                              |  You Git Liks From 
+                         li
+                              i.fa.fa-envelope.fa-lg
+                              |  You Git Emails From 
+                         li
+                              i.fa.fa-money-bill.fa-lg
+                              |  You Git Money From 
+               .noti-footer.text-center: a(href='#') View All Notifactions

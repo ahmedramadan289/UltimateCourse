@@ -1,7 +1,74 @@
 .header {
     background-color: #fff;
-    padding: 15px;
+    padding: 20px;
     .toggle-sidebar {
         cursor: pointer;
+    }
+    .notifaction-contaienr {
+        display: inline-block;
+        margin-left: 20px;
+        .toggle-notfiactions {
+            background: #eee;
+            border-radius: 50%;
+            padding: 10px;
+            color: #555;
+            cursor: pointer;
+        }
+        .dropdown-menu {
+            min-width: 600px;
+            border: none;
+            box-shadow: 10px 10px 10px #ddd;
+            position: relative;
+            top: 10px !important;
+            &:before {
+                content: '';
+                position: absolute;
+                top: -22px;
+                left: 4px;
+                border-style: solid;
+                border-width: 15px;
+                border-color: transparent transparent #333 transparent;
+            }
+            .noti-head {
+                background-color: #333;
+                padding: 15px;
+                color: #fff;
+                span {
+                    float: right;
+                }
+            }
+            .noti-contnet {
+                padding: 20px;
+                ul {
+                    margin: 0;
+                    li {
+                        padding: 10px;
+                        font-size: 1.2rem;
+                        i {
+                            background-color: #eee;
+                            padding: 10px;
+                            margin-right: 20px;
+                            border-radius: 50%;
+                            width: 50px;
+                            height: 50px;
+                            text-align: center;
+                            line-height: 30px;
+                            color: $flatUi;
+                        }
+                    }
+                    &:last-child {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+        .noti-footer {
+            a {
+                display: block;
+                padding: 10px;
+                border-top: 2px solid #eee;
+                text-decoration: none;
+            }
+        }
     }
 }
