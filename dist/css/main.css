@@ -6014,11 +6014,12 @@
 }
 
 .page .content-area {
-  min-height: 100%;
+  min-height: 100vh;
   -webkit-transition: .3s;
   transition: .3s;
   will-change: width;
   float: right;
+  background-color: #f2f1f6;
 }
 
 .page .content-area.no-sidebar {
@@ -6039,6 +6040,11 @@
 
 .page .sidebar.no-sidebar {
   left: -250px;
+}
+
+.header {
+  background-color: #fff;
+  padding: 15px;
 }
 
 .header .toggle-sidebar {
