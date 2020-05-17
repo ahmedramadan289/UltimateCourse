@@ -6036,10 +6036,43 @@
   padding: 15px;
   -webkit-transition: .3s;
   transition: .3s;
+  color: #fff;
 }
 
 .page .sidebar.no-sidebar {
   left: -250px;
+}
+
+.page .sidebar .logo-area {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.page .sidebar .links-area > li > a {
+  position: relative;
+  padding-left: 20px !important;
+}
+
+.page .sidebar .links-area > li > a:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.page .sidebar .links-area li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  position: relative;
 }
 
 .header {
