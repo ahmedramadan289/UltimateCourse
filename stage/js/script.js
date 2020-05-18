@@ -24,15 +24,27 @@ $(function() {
     $('.toggle-settings').on("click", function() {
         $(this).find('i').toggleClass('fa-spin')
         $(this).parent().toggleClass('hide-settings');
+
     });
     var themesClasses = [];
+    var fontsClasses = [];
     $('.color-option li').each(function() {
         themesClasses.push($(this).data('theme'))
+    });
+    $('.font-option select option').each(function() {
+        fontsClasses.push($(this).val())
     });
     $('.color-option  li').on("click", function() {
         $(this).addClass('active').siblings().removeClass('active');
         $('body').removeClass(themesClasses.join(' ')).addClass($(this).data('theme'))
     });
+    $('.font-option select').on("change", function() {
+        $('body').removeClass(fontsClasses.join(' ')).addClass($(this).find('option:selected').val())
+    });
+
+
+
+
 
 });
 

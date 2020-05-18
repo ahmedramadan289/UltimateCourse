@@ -6010,7 +6010,23 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body.openSans {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body.publicSans {
+  font-family: 'Public Sans', sans-serif;
+}
+
+body.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+body.sourceSansPro {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .page {
@@ -6327,6 +6343,10 @@ body {
 
 .settings-box .color-option ul li.active {
   opacity: 1;
+}
+
+.settings-box .font-option select {
+  text-transform: capitalize;
 }
 
 .green-theme .page .sidebar {

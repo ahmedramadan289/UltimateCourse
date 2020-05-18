@@ -10,7 +10,13 @@
                 each theme in themes 
                     li(data-theme=theme)
             hr
-        .option-box
+        .option-box.font-option
             h4 Font Options
+            -var fonts=["openSans","publicSans","roboto","sourceSansPro"]
+            select.form-control
+                each font in fonts 
+                    option(value=font)=font
+            hr
+
         .option-box
             h4 Sidebar Options

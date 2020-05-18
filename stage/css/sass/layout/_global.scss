@@ -3,7 +3,19 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    &.openSans {
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+    &.publicSans {
+        font-family: 'Public Sans', sans-serif;
+    }
+    &.roboto {
+        font-family: 'Roboto', sans-serif;
+    }
+    &.sourceSansPro {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
 }
 
 .page {
